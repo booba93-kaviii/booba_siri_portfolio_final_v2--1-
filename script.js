@@ -54,6 +54,7 @@ skillCards.forEach(card=>card.addEventListener('toggle',()=>{
   if(card.open)skillCards.forEach(other=>{if(other!==card)other.open=false});
 }));
 filterSkillCards();
+<<<<<<< HEAD
 
 // Certificate gallery lightbox.
 const certificateModal=document.getElementById('certificateModal');
@@ -64,3 +65,5 @@ document.querySelectorAll('[data-certificate]').forEach(button=>button.addEventL
 document.getElementById('certificateModalClose').addEventListener('click',closeCertificate);
 certificateModal.addEventListener('click',event=>{if(event.target===certificateModal)closeCertificate()});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&certificateModal.classList.contains('open'))closeCertificate()});
+=======
+>>>>>>> ac14e2abcbf1470a7d7456d443cce3e7081b6fa6
